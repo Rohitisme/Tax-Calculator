@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>CALCULATE YOUR TAX <span id="due">DUE</span> IN FEW CLICKS</h1>
+    <div class="container">
+      <form id="taxForm">
+        <div class="input-group">
+          <label for="grossIncome">Enter gross annual income:</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="grossIncome"
+              placeholder="Enter value here"
+            />
+            <span
+              class="error-icon"
+              id="grossIncomeError"
+              data-tooltip="Error: Please enter a valid number"
+            ></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="extraIncome">Enter extra income:</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="extraIncome"
+              placeholder="Enter value here"
+            />
+            <span
+              class="error-icon"
+              id="extraIncomeError"
+              data-tooltip="Error: Please enter a valid number"
+            ></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="ageGroup">Enter age group:</label>
+          <select id="ageGroup">
+            <option value="">Select age group</option>
+            <option value="40">Less than 40</option>
+            <option value="≥ 40 & < 60">
+              Greater than or equal to 40 and less than 60
+            </option>
+            <option value="≥ 60">Greater than or equal to 60</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="deductions">Enter total appliscable deductions:</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="deductions"
+              placeholder="Enter value here"
+            />
+            <span
+              class="error-icon"
+              id="deductionsError"
+              data-tooltip="Error: Please enter a valid number"
+            ></span>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

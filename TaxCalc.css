@@ -1,0 +1,140 @@
+*{
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: #FAD961;
+background-image: linear-gradient(90deg, #2c4bfa 0%, #ffffff 100%);
+  margin: 0;
+  padding: 20px;
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(15, 0, 153);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+
+}
+#due{
+  color: #b07500;
+}
+
+.container {
+  
+  max-width: 400px;
+  background: #3a3a3a63;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input-group {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  border: none;
+}
+
+.input-wrapper input[type="text"]
+{
+  color: white;
+  flex-grow: 1;
+  background: #e8e8e86f;
+  padding: 10px;
+  padding-right: 30px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+select {
+  flex-grow: 1; 
+  padding: 10px 0 10px 0; 
+  color: rgb(0, 0, 0);
+  border: 1px solid #000000;
+  background-color: #82c5ff;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#option{
+  padding-left: 10px;
+}
+
+.input-wrapper .error-icon {
+  display: none;
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: help;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.input-wrapper .error-icon::after {
+  content: "!";
+}
+
+.input-wrapper .error-icon:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+button[type="submit"] {
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffaa00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ad5c00;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+}
